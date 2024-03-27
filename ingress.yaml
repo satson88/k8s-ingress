@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-nginx
+  name: ingress-app
   namespace: ns-app
   annotations:
 spec:
@@ -17,4 +17,3 @@ spec:
             name: svc-python-demo
             port:
               number: 80
-

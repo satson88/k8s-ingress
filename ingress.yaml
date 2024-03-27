@@ -17,3 +17,13 @@ spec:
             name: svc-python-demo
             port:
               number: 80
+  - host: "k8s-prd-java.sathyalabs.online"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: svc-java-demo
+            port:
+              number: 80

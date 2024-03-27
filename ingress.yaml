@@ -7,14 +7,14 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "k8s-prd-java.sathyalabs.online"
+  - host: "k8s-prd-nodejs.sathyalabs.online"
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: svc-java-demo
+            name: svc-nodejs-demo
             port:
               number: 80
 

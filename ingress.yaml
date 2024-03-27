@@ -27,3 +27,13 @@ spec:
             name: svc-java-demo
             port:
               number: 80
+  - host: "k8s-prd-nodejs.sathyalabs.online"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: svc-nodejs-demo
+            port:
+              number: 3000

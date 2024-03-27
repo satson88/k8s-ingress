@@ -16,7 +16,7 @@ spec:
           service:
             name: svc-python-demo
             port:
-              number: 80
+              number: 5000
   - host: "k8s-prd-java.sathyalabs.online"
     http:
       paths:
